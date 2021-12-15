@@ -7,7 +7,6 @@ class ServiceImpl extends Services {
   Future<List<Todo>> fetchTodo() async {
     var dio = Dio();
     final response = await dio.get('https://jsonplaceholder.typicode.com/todos');
-    print(response.data);
     List<Todo> todos = (response.data as List).map((todo) => Todo.fromMap(todo)).toList();
     return todos;
   }
