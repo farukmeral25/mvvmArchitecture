@@ -11,7 +11,7 @@ on:
   pull_request:
     branches: [ master ]
 
-name: Flutter MVVM Project Release APK
+# name: Flutter MVVM Project Release APK
 jobs:
   build:
     # This job will run on ubuntu virtual machine
