@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MVVM ARCHITECTURE',
+      title: 'MVVM Deneme',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
