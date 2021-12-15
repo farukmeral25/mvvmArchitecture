@@ -25,7 +25,7 @@ jobs:
       with:
         flutter-version:  '2.5.3'
     - run: flutter pub get
-    - run: flutter build apk --release
+    - run: flutter build apk --release --split-per-abi
     - name: Release Apk
       uses: ncipollo/release-action@v1
       with:
