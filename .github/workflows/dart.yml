@@ -2,16 +2,14 @@
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
+# name: Flutter MVVM Project Release APK
 
 name: Dart
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-# name: Flutter MVVM Project Release APK
+    tag:
+    - v*
 jobs:
   build:
     # This job will run on ubuntu virtual machine
