@@ -24,10 +24,11 @@ jobs:
     - uses: actions/subosito/flutter-action@v1
       with:
         flutter-version:  '2.5.3'
-    - run: flutter pub get
-    - run: flutter build apk
+    - run: flutter pub get 
+    - run: flutter build apk 
     - name: Release Apk
       uses: ncipollo/release-action@v1
       with:
         artifacts: "build/app/outputs/flutter-apk/app-release.apk"
        token: ${{secrets.GITHUBACTIONTOKEN}}
+ 
