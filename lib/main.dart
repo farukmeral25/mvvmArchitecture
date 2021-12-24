@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mvvm_project/view/home_view.dart';
-import 'package:flutter_mvvm_project/viewmodel/home_provider.dart';
+import 'package:flutter_mvvm_project/feature/home/view/home_view.dart';
+import 'package:flutter_mvvm_project/feature/home/viewmodel/home_provider.dart';
+
 import 'package:provider/provider.dart';
 import 'core/init/injection_container.dart' as dependencyInjection;
 

@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_mvvm_project/model/todos_model.dart';
-import 'package:flutter_mvvm_project/service/services.dart';
+import 'package:flutter_mvvm_project/feature/home/model/todos_model.dart';
+import 'package:flutter_mvvm_project/feature/home/service/services.dart';
 
 class ServiceImpl extends Services {
   @override

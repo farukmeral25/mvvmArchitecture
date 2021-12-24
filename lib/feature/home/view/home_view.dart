@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mvvm_project/viewmodel/home_provider.dart';
+import 'package:flutter_mvvm_project/feature/home/viewmodel/home_provider.dart';
+
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
           return ListTile(
             leading: Text(homeProvider.todos[index].id.toString()),
             title: Text(homeProvider.todos[index].userId.toString()),
-            subtitle: Text(homeProvider.todos[index].title.toString()),
+            subtitle: Text(homeProvider.todos[index].title),
             trailing: Text(homeProvider.todos[index].completed.toString()),
           );
         },
